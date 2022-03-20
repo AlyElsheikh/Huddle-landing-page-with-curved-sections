@@ -391,6 +391,10 @@ footer .right span {
         grid-row: 1/2;
     }
 
+    footer .right p{
+        width: 280px;
+    }
+
     footer .right button{
         display: block;
         margin: 10px 160px;
@@ -404,7 +408,10 @@ footer .right span {
         padding: 35px 0;
         grid-column: 1/2;
         grid-row: 2/3;
+    }
 
+    footer .left p{
+        width: 280px;
     }
 
     footer .left .f-logo{
