@@ -20,14 +20,10 @@ body{
     color: var(--Cyan);
 }
 
-.all{
-    max-width: 100%;
-    display: grid;    
-}
-
 .container{
-    width: 85%;
-    margin: 0 auto;
+    max-width: 100%;
+    display: grid;
+    margin: 0 auto;    
 }
 
 .svgs img{
@@ -41,6 +37,8 @@ header{
     justify-content: space-between;
     padding: 15px 0;
     height: 60px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 header .logo img{
@@ -108,21 +106,9 @@ header .free button:hover{
 
 .numbers{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    margin: 100px auto;
-}
-
-.numbers .numbers-text{
-    text-align: center;
-    position: relative;
-}
-
-.numbers .numbers-text img{
-    width: 25px;
-    position: absolute;
-    left: 5px;
-    top: -20px;
+    margin: 100px 0;
 }
 
 .numbers .numbers-text h2{
@@ -139,11 +125,6 @@ header .free button:hover{
     display: flex;
     align-items: center;
     background-color: #F6FBFF;
-}
-.grow .grow-container {
-    width: 85%;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
     margin: 0 auto;
 }
@@ -190,14 +171,9 @@ header .free button:hover{
     align-items: center;
     justify-content: space-around;  
     background-color: #F6FBFF;
-}
-
-.user .user-container {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .user-text h3{
@@ -221,6 +197,7 @@ header .free button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px;
 }
 
 .ready h3{
@@ -252,71 +229,56 @@ footer{
     width: 100%;
     display: flex;
     background-color: var(--Cyan);
-}
-
-footer .footer-container {
     color: var(--White);
-    width: 85%;
-    margin: 0 auto;
-    padding: 30px 0;
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    padding: 30px 0;
 }
 
-footer .footer-container .left{
-    width: 400px;
-}
-
-footer .footer-container .left .f-logo {
+footer .left .f-logo {
     margin-bottom: 20px;
 }
 
-footer .footer-container .left .f-logo h1{
+footer .left .f-logo h1{
     display: inline;
     margin: 0;
     font-size: 28px;
 }
-footer .footer-container .left .f-logo img{
+
+footer .left .f-logo img{
     width: 25px;
 }
 
-footer .footer-container .left p{
+footer .left p{
     font-size: 13px;
     margin-bottom: 20px;
-    width: 308px;
+    width: 302px;
 }
-footer .footer-container .left .phone-email {
+footer .left .phone-email {
     display: flex;
     margin-bottom: 10px;
 }
 
 
-footer .footer-container .left .phone-email img {
+footer .left .phone-email img {
     width: 14px;
     margin-right: 10px;
 }
 
-footer .footer-container .left .phone-email span {
+footer .left .phone-email span {
     font-size: 11px;
 }
 
-footer .footer-container .left .social{
+footer .left .social{
     margin-top: 50px;
 }
-footer .footer-container .left .social a{
+footer .left .social a{
     margin-right: 10px;
     color: var(--White);
     font-size: 20px;
 }
-footer .footer-container .left .social a:hover{
+footer .left .social a:hover{
     color: #53acf5;
-}
-
-footer .footer-container .right{
-    width: 400px;
 }
 
 footer .right h4{
@@ -326,8 +288,8 @@ footer .right h4{
 
 footer .right p{
     font-size: 13px;
-    width: 378px;
     margin: 20px 0;
+    width: 302px;
 }
 
 footer .right input{
@@ -372,22 +334,18 @@ footer .right span {
 }
 
 
-footer .right p{
-    width: 280px;
-}
-
 @media (max-width: 540px){
-    .grow .grow-container{
+    .grow {
         flex-direction: column-reverse;
         text-align: center;
         padding: 35px 0;
     }
 
-    .grow .grow-container h3{
+    .grow h3{
         margin-top: 40px;
     }
 
-    .grow .grow-container p{
+    .grow p{
         margin-top: 40px;
         font-size: 13px;
     }
@@ -407,46 +365,52 @@ footer .right p{
         font-size: 13px;
     }
 
-    .user .user-container {
+    .user {
         flex-direction: column-reverse;
         text-align: center;
         padding: 35px 0;
     }
 
-    .user .user-container h3{
+    .user h3{
         margin-top: 40px;
     }
 
-    .user .user-container p{
+    .user p{
         margin-top: 20px;
         font-size: 13px;
     }
 
-    footer .footer-container{
-        flex-direction: column-reverse;
+    footer{
+        display: grid;
     }
 
-    footer .footer-container .right,
-    footer .footer-container .left{
-        width: 320px;
+    footer .right{
+        padding: 0 35px;
+        grid-row: 1/2;
     }
 
     footer .right button{
         display: block;
         margin: 10px 160px;
-
     }
 
     footer .right span{
         display: none;
     }
 
-    footer .footer-container .left .f-logo{
+    footer .left{
+        padding: 35px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+    footer .left .f-logo{
         margin: 50px 0 10px 0;
     }
 
-    footer .footer-container .left .social {
-        margin: 30px 0;
+    footer.left .social {
+        margin: 0 35px;
     }
 
     .build h1{font-size: 25px; text-align: center;}
