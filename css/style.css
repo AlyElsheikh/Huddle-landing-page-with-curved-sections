@@ -21,7 +21,6 @@ body{
 }
 
 .container{
-    max-width: 100%;
     display: grid;
     margin: 0 auto;    
 }
@@ -385,7 +384,6 @@ footer .right span {
     }
 
     footer .right{
-        padding: 0 35px;
         grid-row: 1/2;
     }
 
@@ -399,7 +397,7 @@ footer .right span {
     }
 
     footer .left{
-        padding: 35px;
+        padding: 35px 0;
         grid-column: 1/2;
         grid-row: 2/3;
 
@@ -417,5 +415,5 @@ footer .right span {
     .ready h3,.user .user-container h3,.flowing h3,.grow .grow-container h3{font-size: 25px; text-align: center; width: 300px;}
     .numbers .numbers-text h2 {font-size: 40px; text-align: center;} 
     .build img,.grow-img img,.flowing img,.user-img img{width: 340px; text-align: center;}
-    .build p,.grow .grow-container p,.flowing p,.user .user-container p{text-align: center;width: 290px;}
+    .build p,.grow p,.flowing p,.user p{text-align: center;width: 290px;}
 }
