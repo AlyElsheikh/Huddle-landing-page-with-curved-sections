@@ -116,7 +116,6 @@ header .free button:hover{
 .numbers .numbers-text{
     text-align: center;
     position: relative;
-
 }
 
 .numbers .numbers-text img{
@@ -139,15 +138,13 @@ header .free button:hover{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;  
-    position: relative;
     background-color: #F6FBFF;
 }
 .grow .grow-container {
     width: 85%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -156,13 +153,13 @@ header .free button:hover{
 }
 
 .grow-text p{
-    font-size: 11px;
-    width: 360px;
+    font-size: 13px;
+    width: 425px;
     margin-top: 10px;
 }
 
 .grow-img img{
-    width: 350px;
+    width: 380px;
 }
 
 .flowing{
@@ -174,7 +171,7 @@ header .free button:hover{
 }
 
 .flowing img{
-    width: 350px;
+    width: 380px;
 }
 
 .flowing-text h3{
@@ -182,8 +179,8 @@ header .free button:hover{
 }
 
 .flowing-text p{
-    font-size: 11px;
-    width: 360px;
+    font-size: 13px;
+    width: 425px;
     margin-top: 10px;
 }
 
@@ -191,8 +188,7 @@ header .free button:hover{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;  
-    position: relative;
+    justify-content: space-around;  
     background-color: #F6FBFF;
 }
 
@@ -200,7 +196,7 @@ header .free button:hover{
     width: 85%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -209,13 +205,13 @@ header .free button:hover{
 }
 
 .user-text p{
-    font-size: 11px;
-    width: 360px;
+    font-size: 13px;
+    width: 425px;
     margin-top: 10px;
 }
 
 .user-img img{
-    width: 350px;
+    width: 380px;
 }
 
 .ready{
@@ -265,9 +261,8 @@ footer .footer-container {
     padding: 30px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -289,9 +284,9 @@ footer .footer-container .left .f-logo img{
 }
 
 footer .footer-container .left p{
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 20px;
-    width: 250px;
+    width: 308px;
 }
 footer .footer-container .left .phone-email {
     display: flex;
@@ -330,8 +325,8 @@ footer .right h4{
 }
 
 footer .right p{
-    font-size: 11px;
-    width: 260px;
+    font-size: 13px;
+    width: 378px;
     margin: 20px 0;
 }
 
@@ -376,10 +371,16 @@ footer .right span {
     font-size: 10px;
 }
 
+
+footer .right p{
+    width: 280px;
+}
+
 @media (max-width: 540px){
     .grow .grow-container{
         flex-direction: column-reverse;
         text-align: center;
+        padding: 35px 0;
     }
 
     .grow .grow-container h3{
@@ -388,11 +389,13 @@ footer .right span {
 
     .grow .grow-container p{
         margin-top: 40px;
+        font-size: 13px;
     }
 
     .flowing{
         flex-direction: column;
         text-align: center;
+        padding: 35px 0;
     }
 
     .flowing h3{
@@ -400,12 +403,14 @@ footer .right span {
     }
 
     .flowing p{
-        margin-top: 40px;
+        margin-top: 20px;
+        font-size: 13px;
     }
 
     .user .user-container {
         flex-direction: column-reverse;
         text-align: center;
+        padding: 35px 0;
     }
 
     .user .user-container h3{
@@ -413,7 +418,8 @@ footer .right span {
     }
 
     .user .user-container p{
-        margin-top: 40px;
+        margin-top: 20px;
+        font-size: 13px;
     }
 
     footer .footer-container{
@@ -422,7 +428,7 @@ footer .right span {
 
     footer .footer-container .right,
     footer .footer-container .left{
-        width: 350px;
+        width: 320px;
     }
 
     footer .right button{
@@ -445,8 +451,7 @@ footer .right span {
 
     .build h1{font-size: 25px; text-align: center;}
     .ready h3,.user .user-container h3,.flowing h3,.grow .grow-container h3{font-size: 25px; text-align: center;}
-    .numbers .numbers-text h2 {font-size: 30px; text-align: center;} 
-    .build img,.grow-img img,.flowing img,.user-img img{width: 300px; text-align: center;}
+    .numbers .numbers-text h2 {font-size: 40px; text-align: center;} 
+    .build img,.grow-img img,.flowing img,.user-img img{width: 340px; text-align: center;}
     .build p,.grow .grow-container p,.flowing p,.user .user-container p{text-align: center;width: 290px;}
-
 }
