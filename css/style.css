@@ -232,7 +232,7 @@ footer{
     color: var(--White);
     justify-content: space-around;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 footer .left .f-logo {
@@ -413,8 +413,8 @@ footer .right span {
         margin: 0 35px;
     }
 
-    .build h1{font-size: 25px; text-align: center;}
-    .ready h3,.user .user-container h3,.flowing h3,.grow .grow-container h3{font-size: 25px; text-align: center;}
+    .build h1{font-size: 25px; text-align: center; width: 300px;}
+    .ready h3,.user .user-container h3,.flowing h3,.grow .grow-container h3{font-size: 25px; text-align: center; width: 300px;}
     .numbers .numbers-text h2 {font-size: 40px; text-align: center;} 
     .build img,.grow-img img,.flowing img,.user-img img{width: 340px; text-align: center;}
     .build p,.grow .grow-container p,.flowing p,.user .user-container p{text-align: center;width: 290px;}
